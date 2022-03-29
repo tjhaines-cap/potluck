@@ -9,4 +9,13 @@ describe Potluck do
 
     expect(potluck).to be_an_instance_of(Potluck)
   end
+
+  it "has readable attributes" do
+    potluck = Potluck.new("7-13-18")
+
+    expect(potluck.date).to eq("7-13-18")
+    expect(potluck.dishes).to eq([])
+  end
+
+
 end

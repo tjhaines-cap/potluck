@@ -1,8 +1,10 @@
 class Dish
 
+  attr_reader :name, :category
+
   def initialize(name, type)
     @name = name
-    @type = type
+    @category = type
   end
-  
+
 end
